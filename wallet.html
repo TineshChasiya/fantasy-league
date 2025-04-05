@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy League | Wallet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/wallet/style.css">
+    <link rel="stylesheet" href="/dashboard/style.css">
+</head>
+<body>
+    <nav class="all-matches">
+        <div class="back-text">
+            <a href="/dashboard/home.html">
+                <i class="fa-solid fa-arrow-left arr-left"></i>
+            </a>
+            <span class="text">Add Cash</span>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <div class="Total-balance">
+            <div class="Current-balance">Current Balance</div>
+            <div class="available-balance">₹0</div>
+        </div>
+        <form action="#">
+        <div class="add-amount">
+            <div class="input-add">
+           
+                    <input type="search" placeholder="Amount to add" required>
+            </div>
+         </div>
+         <div class="payment-mode">
+            <div class="preferred-mode">
+                <div class="GPay-mode">
+                    <div class="mode-name">
+                        <label for="Gpay">Google Pay</label>
+                    </div>
+                    <div class="radio-check">
+                        <input type="radio" name="payment-mode" id="Gpay">
+                    </div>
+                </div>
+                <div class="option">
+                    <span class="or">OR</span>
+                </div>
+                <div class="upi-id">
+                    <input type="text" placeholder="Enter UPI ID" name="" id="">
+                </div>
+                <div class="pay-btn">
+                    <input type="button" value="Pay via Google Pay">
+                </div>
+            </div>
+         </div>
+
+         <div class="payment-mode">
+            <div class="preferred-mode">
+                <div class="GPay-mode">
+                    <div class="mode-name">
+                        <label for="Phonepay">Phone Pay</label>
+                    </div>
+                    <div class="radio-check">
+                        <input type="radio" name="payment-mode" id="Phonepay">
+                    </div>
+                </div>
+                <div class="option">
+                    <span class="or">OR</span>
+                </div>
+                <div class="upi-id">
+                    <input type="text" placeholder="Enter UPI ID" name="" id="">
+                </div>
+                <div class="pay-btn">
+                    <input type="button" value="Pay via Phone Pay">
+                </div>
+            </div>
+         </div>
+
+        </form>
+        
+        <div class="wrapper2">
+            
+            <div class="form-container">
+                    <label for="login" class="slide login">Credit Card</label>
+                    <label for="signup" class="slide signup">/ Debit Card</label>
+                    <div class="slider-tab"></div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <div class="field">
+                            <input type="text" name="" id="" placeholder="Card Number" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" id="" placeholder="Name on the Card" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Expiry MM/YYYY" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="CVV" required>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Pay Now">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+ 
+    <script src="/wallet/script.js"></script>
+</body>
+</html>

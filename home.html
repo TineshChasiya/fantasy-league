@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantasy League | Dashboard</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/dashboard/style.css" />
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="bar_wallet_icon">
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+      </div>
+      <div class="logo_text">
+        <a href="/wallet/wallet.html">
+          <i class="bx bx-wallet n"></i>
+        </a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">TC_team</span>
+      </div>
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-wallet icon"></i>
+              <span class="link">My Balance</span>
+            </a>
+            <div class="balance">₹0</div>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">My Info & Settings</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-gamepad icon"></i>
+              <span class="link">How to play</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-headset icon"></i>
+              <span class="link">24*7 Help & Support</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="bottom-cotent">
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="activation">
+      <div class="activation_logo">
+        <span class="name">Fantasy League</span>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
+  <div class="wrapper wrapper-bottom">
+    <input type="radio" name="slider" id="home" checked>
+    <input type="radio" name="slider" id="blog">
+    <input type="radio" name="slider" id="code">
+    <nav class="tab-nav">
+      <label for="home" class="home">Home</label>
+      <label for="blog" class="blog">My Matches</label>
+      <label for="code" class="code">Refer & Win</label>
+      <div class="slider"></div>
+    </nav>
+    <section>
+      <div class="content content-1">
+        <div class="title">
+
+          <div class="sports">
+            <i class="fa-solid fa-baseball-bat-ball sports_icon"></i>
+            <span class="sports_name">Cricket</span>
+          </div>
+
+          <!-- Cards -->
+
+          <section class="all-league">
+            <div class="Event">
+              <a href="/dashboard/all-matches.html">
+                <span class="format">T20</span>
+                <span class="tournament">Indian Premier League</span>
+                <i class="fa-solid fa-arrow-right arr-right"></i>
+              </a>
+
+              <div class="teams-time">
+                <div class="teams">
+                  <div class="team-name"><span class="team-title">GT</span> <span class="team-FL">Gujarat Titans</span>
+                  </div>
+                  <div class="team-name"><span class="team-title">MI</span> <span class="team-FL">Mumbai Indians</span>
+                  </div>
+                </div>
+                <div class="time">
+                  <div class="remaining-time">8h:01m</div>
+                  <div class="starting-time">7:30 PM</div>
+                </div>
+              </div>
+
+              <div class="prize-pool">
+                <div class="icon">M</div>
+                <div class="prize-pool-money">₹10 Crores</div>
+              </div>
+
+            </div>
+
+            <div class="Event">
+              <a href="/dashboard/all-matches.html">
+                <span class="format">T20</span>
+                <span class="tournament">Indian Premier League</span>
+                <i class="fa-solid fa-arrow-right arr-right"></i>
+              </a>
+
+              <div class="teams-time">
+                <div class="teams">
+                  <div class="team-name"><span class="team-title">GT</span> <span class="team-FL">Gujarat Titans</span>
+                  </div>
+                  <div class="team-name"><span class="team-title">MI</span> <span class="team-FL">Mumbai Indians</span>
+                  </div>
+                </div>
+                <div class="time">
+                  <div class="remaining-time">8h:01m</div>
+                  <div class="starting-time">7:30 PM</div>
+                </div>
+              </div>
+
+              <div class="prize-pool">
+                <div class="icon">M</div>
+                <div class="prize-pool-money">₹10 Crores</div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="content content-2">
+        <div class="title">
+          <div class="my-matches-tab">
+            <input type="radio" name="slider-my-matches" id="upcoming" checked>
+            <input type="radio" name="slider-my-matches" id="live">
+            <input type="radio" name="slider-my-matches" id="completed">
+            <nav class="tab-nav-my-matches">
+              <label for="upcoming" class="upcoming">Upcoming</label>
+              <label for="live" class="live">Live</label>
+              <label for="completed" class="completed">Completed</label>
+              <div class="slider2"></div>
+            </nav>
+            <section>
+              <div class="content2 mm-content-1">
+                <div class="title2">
+                  <div class="upcoming-container">
+                    <div class="upcoming2">
+                      <div class="title-upcoming">Join a match now.</div>
+                      <a href="">
+                        <div class="join-link">
+                          VIEW UPCOMING MATCHES
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content2 mm-content-2">
+                <div class="title2">
+                  <div class="upcoming-container">
+                    <div class="upcoming2">
+                      <div class="title-upcoming">Join any match & track your performance here.</div>
+                      <a href="">
+                        <div class="join-link">
+                          VIEW UPCOMING MATCHES
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content2 mm-content-3">
+                <div class="title2">
+                  <div class="completed-wrapper">
+                    <div class="completed-container">
+                      <div class="completed-title">
+                        <div class="format">T20</div>
+                        <div class="league">Indian Premier League</div>
+                      </div>
+                      <div class="teams-time">
+                        <div class="teams">
+                          <div class="team-container">
+                            <img src="/teams/img_avatar.png" width="20" alt="">
+                            <pre class="team"> IND</pre>
+                            <div class="team-fl">India</div>
+                          </div>
+                          <div class="team-container">
+                            <img src="/teams/img_avatar.png" width="20" alt="">
+                            <div class="team">ENG</div>
+                            <div class="team-fl">England</div>
+                          </div>
+                        </div>
+                        <div class="time">
+                          <div class="date">Today</div>
+                          <div class="time-started">12:30 PM</div>
+                        </div>
+                      </div>
+                      <div class="join-team--contest">
+                        <div class="join-team">1 Team</div>
+                        <div class="contest">0 Contest</div>
+                      </div>
+                    </div>
+                    <div class="completed-container">
+                      <div class="completed-title">
+                        <div class="format">T20</div>
+                        <div class="league">Indian Premier League</div>
+                      </div>
+                      <div class="teams-time">
+                        <div class="teams">
+                          <div class="team-container">
+                            <img src="/teams/img_avatar.png" width="20" alt="">
+                            <pre class="team"> IND</pre>
+                            <div class="team-fl">India</div>
+                          </div>
+                          <div class="team-container">
+                            <img src="/teams/img_avatar.png" width="20" alt="">
+                            <div class="team">ENG</div>
+                            <div class="team-fl">England</div>
+                          </div>
+                        </div>
+                        <div class="time">
+                          <div class="date">Today</div>
+                          <div class="time-started">12:30 PM</div>
+                        </div>
+                      </div>
+                      <div class="join-team--contest">
+                        <div class="join-team">1 Team</div>
+                        <div class="contest">0 Contest</div>
+                      </div>
+                    </div>
+                    <div class="completed-container">
+                      <div class="completed-title">
+                        <div class="format">T20</div>
+                        <div class="league">Indian Premier League</div>
+                      </div>
+                      <div class="teams-time">
+                        <div class="teams">
+                          <div class="team-container">
+                            <img src="/teams/img_avatar.png" width="20" alt="">
+                            <pre class="team"> IND</pre>
+                            <div class="team-fl">India</div>
+                          </div>
+                          <div class="team-container">
+                            <img src="/teams/img_avatar.png" width="20" alt="">
+                            <div class="team">ENG</div>
+                            <div class="team-fl">England</div>
+                          </div>
+                        </div>
+                        <div class="time">
+                          <div class="date">Today</div>
+                          <div class="time-started">12:30 PM</div>
+                        </div>
+                      </div>
+                      <div class="join-team--contest">
+                        <div class="join-team">1 Team</div>
+                        <div class="contest">0 Contest</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="content content-3">
+        <div class="title">
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <section class="overlay"></section>
+  <section class="overlay2"></section>
+
+
+
+  <script src="/dashboard/script.js"></script>
+</body>
+
+</html>

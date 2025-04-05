@@ -1,0 +1,552 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    background-color: rgba(0, 0, 0, 0.03);
+    width: 100%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      color: white;
+      background: linear-gradient( rgba(255,0,0),rgba(255,165,0));
+    box-shadow: 0 0 10px  rgb(255, 165, 0, 0.2);
+    z-index: 1;
+  }
+
+.contest-nav .left{
+    display: flex;
+    align-items: center;
+}
+
+.contest-nav .left .back{
+    margin-left: 15px;
+    /* width: 100%; */
+}
+.contest-nav .left .back i{
+    font-size: 1.5rem;
+    /* color: rgb(255, 165, 0, 0.8); */
+    /* color: rgb(0, 0, 0, 0.4); */
+    color: white;
+}
+
+.contest-nav .left .teams{
+    width: 100%;
+    margin-left: 20px;
+}
+
+.contest-nav .left .teams .team span{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+}
+
+.contest-nav .right{
+    margin-right: 0.5rem;
+    /* width: 10%; */
+    background-color: rgb(0, 0, 0, 0.08);
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+.contest-nav .right .wallet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.contest-nav .right a{
+    text-decoration: none;
+    color: none;
+}
+
+.contest-nav .right .wallet div{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+.contest-nav .right .wallet i{
+    font-size: 1.3rem;
+    color: black;
+    /* margin-right: 5px; */
+    color: white;
+}
+
+.contest-nav .right .wallet span{
+    font-size: 1.3rem;
+    /* margin-right: ; */
+    color: white;
+}
+
+
+.contest-nav .right .wallet .add-more{
+    font-size: 1.1rem;
+    background-color: green;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    margin: 4.3rem auto;
+    left: 0;
+    z-index: 1;
+}
+
+.wrapper-bottom{
+    width: 100%;
+    height: 50vh;
+    margin: 4.3rem auto;
+    left: 0;
+    z-index: 1;
+}
+
+.wrapper .tab-nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 11;
+    top:4rem;
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.08);
+}
+
+.wrapper nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code{
+    color: red;
+}
+
+nav label i{
+    padding-right: 7px;
+}
+
+nav .slider{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 5px;
+    /* background-color: blue; */
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#blog:checked ~ nav .slider{
+    left: 20%;
+}
+
+#code:checked ~ nav .slider{
+    left: 40%;
+}
+
+section .content{
+    display: none;
+    background-color: #fff;
+}
+
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3{
+    display: block;
+}
+
+.contests{
+    /* width: 50%; */
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background: rgb(0, 0, 0, 0.02);
+}
+
+ 
+.contests .contests-name .title{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.contests .contests-name .prize-pool{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+.contests .contests-name .prize-pool .title-prize-pool{
+    color: rgba(0, 0, 0, 0.5);
+}
+.contests .contests-name .prize-pool .title-prize-pool i{
+    color: green;
+    margin-left: 0.4rem;
+}
+
+.contests .contests-name .prize-pool .prize-pool-money{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.contests .contests-name .prize-pool .prize-pool-money .total-prize-pool{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.contests .contests-name .prize-pool .prize-pool-money .prize-pool-entry{
+    font-size: 0.8rem;
+    background-color: green;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1.8rem;
+    border-radius: 5px;
+}
+
+.contests .contests-name .prize-pool .spots div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+}
+
+.contests .contests-name .prize-pool .spots div .left-spots{
+    color: red;
+}
+
+.contests .contests-name .prize-pool .spots div .total-spots{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contests .contests-name .prize-pool .spots .spots-indicator .back{
+    width: 100%;
+    height: 0.3rem;
+    background: rgba(255,0,0,0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.contests .contests-name .prize-pool .spots .spots-indicator .back .front{
+    width: 50%;
+    height: 0.3rem;
+    background: rgba(255,0,0,1);
+    border-radius: 5px;
+    position: absolute;
+}
+.contests .contests-name .prize-pool .contest-info{
+    margin-top: 1rem;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.02);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+ 
+.contests .contests-name .prize-pool .contest-info .info{
+    margin-left: 0.9rem;
+}
+
+.contests .contests-name .prize-pool .contest-info .first-winner .first{
+    background-color: lightyellow;
+    padding: 0.2rem;
+    border-radius: 3px;
+}
+
+
+.contests .contests-name .prize-pool .contest-info .first-winner .money{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 0.1rem;
+}
+
+.contests .contests-name .prize-pool .contest-info .winners {
+    color: rgba(0, 0, 0, 0.56);
+}
+
+
+.contests .contests-name .prize-pool .contest-info .max-entry {
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.wrapper .title{
+    width: 100%;
+}
+
+.wrapper  .title .my-contests{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  flex-direction: column;
+}
+
+.wrapper  .title .my-contests .icon i{
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.09);
+    margin-bottom: 1rem;
+}
+.wrapper  .title .my-contests .suggest{
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper  .title .my-contests .suggest .text{
+    font-size: 1.01rem;
+}
+
+.wrapper  .title .my-contests  .join-a-contest{
+    margin-top: 1rem;
+}
+
+
+.wrapper  .title .my-contests  .join-a-contest a{
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.wrapper  .title .my-team{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 0vh; */
+    flex-direction: column;
+  }
+
+  .wrapper  .title .my-team div{
+    margin-bottom: 1rem;
+  }
+
+  .wrapper  .title .my-team .text{
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .wrapper  .title .my-team .create-a-team i{
+    margin-right: 0.5rem;
+  }
+  .wrapper  .title .my-team .create-a-team a{
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .join-contest{
+    display: none;
+  }
+  .team-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .join-a-team-container{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.5em;
+  }
+
+  .join-a-team-container .team-container{
+   padding: 0.5em;
+   display: flex;
+   align-items: center;
+   gap: 1em;
+}
+
+.join-a-team-container .team-container .team-name{
+    /* width: 5%; */
+    margin-left: 1em;
+   background-color: rgba(0, 0, 0, 0.03);
+   text-align: center;
+   padding: 0.5em;
+
+}
+
+.created-team-container{
+    background-color: lightgreen;
+    margin: 0.5em;
+    border-radius: 0.3em;
+    /* padding: 0.5em; */
+}
+
+
+.created-team-container .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0.5em;
+    background-color: darkgreen;
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.created-team-container .top .left .ct-team-name{
+    font-weight: 800;
+}
+
+
+.created-team-container .top .right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    margin-right: 1em;
+}
+
+.created-team-container .selectedPlayer-cvc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.created-team-container .selectedPlayer-cvc .left,
+.created-team-container .selectedPlayer-cvc .right{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    gap: 2em;
+    color: rgba(0, 0, 0, 0.5);
+    width: 35%;
+}
+
+
+.created-team-container .selectedPlayer-cvc .left .team,
+.created-team-container .selectedPlayer-cvc .right .team{
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+.created-team-container .selectedPlayer-cvc .left .team .player-selected,
+.created-team-container .selectedPlayer-cvc .right .team .player-selected{
+    font-size: 1.5em;
+    margin-top: 0.3em;
+}
+
+.created-team-container .selectedPlayer-cvc .right  .chc-player{
+    width: 100%;
+}
+
+.created-team-container .selectedPlayer-cvc .right  .chc-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.created-team-container .selectedPlayer-cvc .right  .chc-player .chc{
+    color: #fff;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid darkcyan;
+    width: 50%;
+}
+
+.created-team-container .selectedPlayer-cvc .right  .chc-player .name{
+    font-size: 0.8em;
+    background-color: black;
+    color: #fff;
+    /* font-weight: 500; */
+    text-align: center;
+    width: 100%;
+}
+
+.created-team-container .bottom-cted{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3em 1em;
+    background-color: rgb(0, 0, 0, 0.04);
+}
+
+.created-team-container .bottom-cted .pos-no .pos{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.created-team-container .bottom-cted .pos-no .no{
+    color: #fff;
+    font-weight: 800;
+    margin-left: 0.5em;
+}
+
+.created-team-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width:500px) {
+    .created-team-wrapper{
+        display: grid;
+        grid-template-columns: auto;
+    }
+        
+    .created-team-container .selectedPlayer-cvc .right  .chc-player img{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:1222px) {
+    .created-team-wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .created-team-wrapper{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+

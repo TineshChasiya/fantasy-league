@@ -1,0 +1,157 @@
+.preview-team {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    z-index: 111;
+    display: none;
+}
+
+
+.preview-team .preview-nav {
+    background-color: rgb(50, 12, 100);
+    color: white;
+    padding: 1rem;
+}
+
+.preview-team .preview-nav .close-username {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.preview-team .preview-nav .close-username .preview-close {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.preview-team .preview-nav .close-username .username {
+    font-weight: 700;
+}
+
+.preview-team .preview-nav .players-selected-credits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    padding-top: 0.5rem;
+}
+
+.preview-team .preview-nav .players-selected-credits .players .title,
+.preview-team .preview-nav .players-selected-credits .credits .title {
+    color: lightgray;
+}
+
+
+.preview-team .preview-nav .players-selected-credits .players .value {
+    color: lightgray;
+}
+
+
+.preview-team .preview-nav .players-selected-credits .players .value span,
+.preview-team .preview-nav .players-selected-credits .credits .value {
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+.preview-team .preview-nav .players-selected-credits .selected .lt .team {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+    margin-right: 0.3rem;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.preview-team .preview-nav .players-selected-credits .selected .rt,
+.preview-team .preview-nav .players-selected-credits .selected .lt {
+    font-size: 1.3rem;
+}
+
+.preview-team .preview-nav .players-selected-credits .selected .rt .team {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+    margin-left: 0.3rem;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.preview-team .selected-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+.preview-team .selected-player .no-selected-player {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.preview-team .selected-player .no-selected-player .title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.preview-team .selected-player .no-selected-player .starting-btn {
+    background-color: #FFF;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.preview-team .your-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.preview-team .your-team .wk,
+.preview-team .your-team .bat,
+.preview-team .your-team .ar,
+.preview-team .your-team .bowl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.preview-team .your-team .wk-title,
+.preview-team .your-team .bat-title,
+.preview-team .your-team .ar-title,
+.preview-team .your-team .bowl-title {
+    color: grey;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+}
+
+.preview-team .your-team .wk .your-player .your-player-name,
+.preview-team .your-team .bat .your-player .your-player-name,
+.preview-team .your-team .ar .your-player .your-player-name,
+.preview-team .your-team .bowl .your-player .your-player-name {
+    background-color: #FFF;
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-top: -0.3rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.preview-team .your-team .wk .your-player .your-player-credit,
+.preview-team .your-team .bat .your-player .your-player-credit,
+.preview-team .your-team .ar .your-player .your-player-credit,
+.preview-team .your-team .bowl .your-player .your-player-credit {
+    color: #FFF;
+}
